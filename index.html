@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ha">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Viewer</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Launin gefe na bayansa */
+            display: flex;
+            justify-content: center; /* Tsakiya */
+            align-items: flex-start; /* Sama */
+            min-height: 100vh; /* Girman mafi karanci */
+            box-sizing: border-box;
+        }
+        .container {
+            width: 90%; /* Kashi 90% na girman buruza */
+            max-width: 1200px; /* Girman da ya fi haka girma zai tsaya */
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: #fff; /* Launin bayanin kan PDF */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayanin kan akwati */
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .pdf-viewer {
+            width: 100%;
+            height: 1080px; /* Girman da za'a nuna PDF ɗin */
+            border: none; /* Babu border */
+            border-radius: 5px;
+            overflow: hidden; /* Duk abun da ya fita zai ɓace */
+        }
+        /* Responsive adjustment for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                padding: 15px;
+            }
+            .pdf-viewer {
+                height: 480px; /* Karamin girma a wayoyi ko alluna masu karanci */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bayanai</h1>
+       
+
+        <iframe 
+            class="pdf-viewer" 
+            src="https://drive.google.com/file/d/19VqF0m4teDt945l_RmkostTNmhzPwYLV/preview" 
+            allow="autoplay"
+            allowfullscreen>
+        </iframe>
+
+        <p style="text-align: center; margin-top: 20px; color: #777;">
+             <a href="https://drive.google.com/file/d/19VqF0m4teDt945l_RmkostTNmhzPwYLV/view?usp=drivesdk" target="_blank" style="color: #007bff; text-decoration: none;">danna nan</a>.
+        </p>
+    </div>
+
+    <script>
+        // JavaScript na iya kara wasu abubuwa idan kana so.
+        // A yanzu, ba'a da wani JavaScript mai tsada a nan ba saboda iframe din zai yi aiki sosai.
+        // Misali, idan kana so ka kara wani "loading spinner" yayin da PDF ke loda,
+        // zaka iya saka JavaScript don haka.
+        // Amma, don gudun kada abin ya yi rikici, na barshi haka a yanzu.
+        
+        // Misali, idan kana son sanin lokacin da iframe ya gama loda:
+        const iframe = document.querySelector('.pdf-viewer');
+        iframe.onload = function() {
+            console.log('PDF Viewer has loaded.');
+            // Zaka iya saka wani aiki anan, misali, cire wani loading spinner.
+        };
+        
+        // A nan ne zaka iya kara wasu ayyukan JavaScript da kake so.
+        // Misali, idan kana so ka yi wasu gyare-gyare bisa ga abinda mai amfani yayi.
+    </script>
+</body>
+</htmPDF
